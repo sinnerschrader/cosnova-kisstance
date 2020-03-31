@@ -1,0 +1,27 @@
+{
+  "name": "kisstance",
+  "description": "kisstance microsite",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "lint:sass": "stylelint './src/sass/*.sass' ",
+    "lint:js": "eslint './src/js/*.js' ",
+    "lint:all": "npm run lint:sass && npm run lint:js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.sinnerschrader.com:olagas/kisstance.git"
+  },
+  "keywords": [],
+  "author": "Ola Gasidlo, Tamara Kis, Taha Zia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://git.sinnerschrader.com/olagas/kisstance/-/issues"
+  },
+  "homepage": "https://git.sinnerschrader.com/olagas/kisstance/",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "stylelint": "^13.2.1",
+    "stylelint-scss": "^3.16.0"
+  }
+}
