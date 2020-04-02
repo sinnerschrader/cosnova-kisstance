@@ -1,0 +1,23 @@
+footer {
+    background: $pink;
+    color: $white;
+    ul{
+        padding: 40px 0 0;
+        li {
+            list-style-type: none;
+            a {
+            color: $white;
+            }
+        }
+    }
+    .flex-grid-thirds {
+        .col {
+            max-width: 101px;
+            max-height: 101px;
+            img{
+                width: auto;
+                height: 100%;
+            }
+        }
+    }
+}

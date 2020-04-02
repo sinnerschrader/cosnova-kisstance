@@ -1,4 +1,6 @@
-$test-color: red;
-h1 {
-    background: $test-color;
-}
+@import "./grid";
+@import "./variables";
+
+// Components
+@import "./header";
+@import "./footer";

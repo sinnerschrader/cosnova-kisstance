@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+}
+.container{
+    padding:40px 30px;
+    .flex-grid {
+        display: flex;
+        .col {
+            flex: 1;
+        }
+    }
+    .flex-grid-thirds {
+        display: flex;
+        justify-content: space-between;
+        .col {
+            width: 32%;
+        }
+    }
+}

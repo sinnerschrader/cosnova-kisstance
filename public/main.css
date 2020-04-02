@@ -1,2 +1,37 @@
-h1 {
-  background: red; }
+body {
+  margin: 0; }
+
+.container {
+  padding: 40px 30px; }
+  .container .flex-grid {
+    display: flex; }
+    .container .flex-grid .col {
+      flex: 1; }
+  .container .flex-grid-thirds {
+    display: flex;
+    justify-content: space-between; }
+    .container .flex-grid-thirds .col {
+      width: 32%; }
+
+header {
+  background-image: url("./img/header_img_text.jpg");
+  background-position: center;
+  background-size: auto 125%;
+  height: 100vw;
+  width: 100%; }
+
+footer {
+  background: #B92447;
+  color: #ffffff; }
+  footer ul {
+    padding: 40px 0 0; }
+    footer ul li {
+      list-style-type: none; }
+      footer ul li a {
+        color: #ffffff; }
+  footer .flex-grid-thirds .col {
+    max-width: 101px;
+    max-height: 101px; }
+    footer .flex-grid-thirds .col img {
+      width: auto;
+      height: 100%; }

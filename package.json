@@ -8,8 +8,8 @@
     "lint:js": "eslint './src/js/*.js' ",
     "lint:all": "npm run lint:scss && npm run lint:js",
     "build:css": "node-sass --include-path scss src/scss/main.scss public/main.css",
-    "watch:css": "npm run build-css && npm run build-css -- -w",
-    "start": "browser-sync start --server --files='./*.html,./*.css', nodemon -e scss -x 'npm run build-css', node-sass --watch scss -o css, 'npm run build-css'"
+    "watch:css": "npm run build:css && npm run build:css -- -w",
+    "start": "browser-sync start --server --files='./*.html,./*.css', nodemon -e scss -x 'npm run build:css', node-sass --watch scss -o css, 'npm run build:css'"
   },
   "repository": {
     "type": "git",
