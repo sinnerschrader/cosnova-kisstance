@@ -1,0 +1,28 @@
+.container {
+  padding: 2.500em 1.875em; }
+  .container .flex-grid {
+    display: flex; }
+    .container .flex-grid .col {
+      flex: 1; }
+  .container .flex-grid-thirds {
+    display: flex;
+    justify-content: space-between; }
+    .container .flex-grid-thirds .col {
+      width: 32%; }
+
+footer {
+  background: #B92447;
+  color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  width: calc(100%); }
+  footer ul {
+    padding: 2.500em 0 0; }
+    footer ul li {
+      list-style-type: none; }
+      footer ul li a {
+        color: #ffffff; }
+  footer .flex-grid-thirds .col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
