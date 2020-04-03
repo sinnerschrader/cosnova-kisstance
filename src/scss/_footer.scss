@@ -1,28 +1,25 @@
 #footer {
-  background: $pink;
-  color: $white;
-  position: sticky;
-  width: 100%;
-
-  ul {
-    padding: 2em 0;
-
-    li {
-      list-style-type: none;
-
-      a {
-        color: $white;
-      }
+    background: $pink;
+    color: $white;
+    position: sticky;
+    width: 100%;
+    ul{
+        padding: 2em 0;
+        li {
+            list-style-type: none;
+            a {
+            color: $white;
+            }
+        }
+    }
+    .flex-grid-thirds {
+        .col {
+            .logo {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+            }
+        }
     }
   }
 
-  .flex-grid-thirds {
-    .col {
-      .logo {
-        width: 90%;
-        height: 90%;
-        object-fit: cover;
-      }
-    }
-  }
-}
