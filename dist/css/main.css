@@ -28,10 +28,32 @@
     height: 100px;
     object-fit: cover; }
 
-#header {
-  background-image: url("../../src/img/header_img_text.jpg");
-  background-position: center top;
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 100vw;
-  width: 100%; }
+.impressum-header {
+  width: 100%;
+  text-align: center; }
+  .impressum-header img:nth-child(2) {
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .impressum-header img:first-child {
+    width: 100%;
+    position: relative; }
+
+.impressum {
+  padding-top: 0;
+  font-family: Helvetica, Arial, sans-serif; }
+  .impressum h1 {
+    font-weight: 500;
+    margin: 0 0 100px 0; }
+  .impressum h3 {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 40px; }
+  .impressum ul {
+    padding: 0; }
+    .impressum ul li {
+      font-weight: 300;
+      list-style-type: none; }
+  .impressum p {
+    font-weight: 300; }
