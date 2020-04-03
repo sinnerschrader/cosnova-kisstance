@@ -1,12 +1,10 @@
-footer {
+#footer {
     background: $pink;
     color: $white;
-    position: fixed;
-    bottom: 0;
-
-    width: calc(100%);
+    position: sticky;
+    width: 100%;
     ul{
-        padding: 2.500em 0 0;
+        padding: 2em 0;
         li {
             list-style-type: none;
             a {
@@ -16,9 +14,9 @@ footer {
     }
     .flex-grid-thirds {
         .col {
-            img{
-                width: 100%;
-                height: 100%;
+            .logo {
+                width: 100px;
+                height: 100px;
                 object-fit: cover;
             }
         }
