@@ -29,7 +29,7 @@
     object-fit: cover; }
 
 #header {
-  background-image: url("../../src/img/header_bg.png");
+  background-image: url("../../src/img/header_img_text.jpg");
   background-position: center top;
   background-size: contain;
   background-repeat: no-repeat;
