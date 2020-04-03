@@ -6,6 +6,7 @@
   "scripts": {
     "lint:scss": "stylelint './src/scss/*.scss' ",
     "lint:js": "eslint './src/js/*.js' ",
+    "lint:js:fix": "eslint --fix './src/js/*.js' ",
     "lint:all": "npm run lint:scss && npm run lint:js",
     "build:css": "node-sass --include-path scss src/scss/main.scss dist/css/main.css",
     "watch:css": "npm run build:css && npm run build:css -- -w",
