@@ -7,9 +7,9 @@
     "lint:scss": "stylelint './src/scss/*.scss' ",
     "lint:js": "eslint './src/js/*.js' ",
     "lint:all": "npm run lint:scss && npm run lint:js",
-    "build:css": "node-sass --include-path scss src/scss/main.scss public/main.css",
-    "watch:css": "npm run build-css && npm run build-css -- -w",
-    "start": "browser-sync start --server --files='./*.html,./*.css', nodemon -e scss -x 'npm run build-css', node-sass --watch scss -o css, 'npm run build-css'"
+    "build:css": "node-sass --include-path scss src/scss/main.scss dist/css/main.css",
+    "watch:css": "npm run build:css && npm run build:css -- -w",
+    "start": "browser-sync start --server --files='./*.html,./*.css', nodemon -e scss -x 'npm run build:css', node-sass --watch scss -o css, 'npm run build:css'"
   },
   "repository": {
     "type": "git",
@@ -29,5 +29,8 @@
     "nodemon": "^2.0.2",
     "stylelint": "^13.2.1",
     "stylelint-scss": "^3.16.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }
