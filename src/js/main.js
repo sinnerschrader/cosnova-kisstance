@@ -12,7 +12,7 @@ function returnImageTags(arr) {
         + '"> <br />'
     );
   }
-  document.getElementById('js-olapic_stream').innerHTML = tags;
+  document.getElementById('js-olapic_stream').innerHTML = tags + document.getElementById('js-olapic_stream').innerHTML;
 }
 
 function getImages(url) {
