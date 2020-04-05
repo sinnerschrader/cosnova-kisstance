@@ -24,24 +24,70 @@
       #footer ul li a {
         color: #ffffff; }
   #footer .flex-grid-thirds .col .logo {
-    width: 100px;
-    height: 100px;
+    width: 90%;
+    height: 90%;
     object-fit: cover; }
 
 #header {
-  background-image: url("../../src/img/header_img_text.jpg");
-  background-position: center top;
-  background-size: contain;
+  background-image: url("../../src/img/header_bg.png");
+  background-position: 40% top;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 100vw;
-  width: 100%; }
+  min-height: 160vw;
+  width: 100%;
+  padding: 25% 0; }
+
+/* Alt text for header image */
+.header_claim_alt {
+  visibility: hidden; }
+
+.header_img {
+  width: 100%;
+  text-align: center;
+  display: block; }
+
+.header_dwb .logo {
+  min-height: 250px;
+  padding: 50px; }
 
 #js-olapic_stream {
-  text-align: center; }
+  text-align: center;
+  background: url("../../src/img/background_UGC.png") center top no-repeat;
+  background-size: contain; }
 
 .olapic_img {
   width: 60%;
   margin: 2em 1.3em; }
 
+.olapic_legend {
+  text-align: right;
+  display: block; }
+
 body {
-  font-family: "lato", sans-serif; }
+  font-family: "lato", sans-serif;
+  font-size: 14px;
+  line-height: 1.8em; }
+
+.headline {
+  font-size: 2.2em;
+  line-height: 2.6em;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: url("../../src/img/bg_headline.svg") center no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center; }
+
+.text,
+.link,
+.link:active,
+.link:focus,
+.link:visited,
+.link:hover {
+  font-weight: 400;
+  color: #000; }
+
+.text {
+  font-size: 1.8em;
+  line-height: 2em; }

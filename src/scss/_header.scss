@@ -1,8 +1,25 @@
 #header {
-  background-image: url("../../src/img/header_img_text.jpg");
-  background-position: center top;
-  background-size: contain;
+  background-image: url("../../src/img/header_bg.png");
+  background-position: 40% top;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 100vw;
+  min-height: 160vw;
   width: 100%;
+  padding: 25% 0;
+}
+
+/* Alt text for header image */
+.header_claim_alt {
+  visibility: hidden;
+}
+
+.header_img {
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+.header_dwb .logo{
+  min-height: 250px;
+  padding: 50px;
 }
