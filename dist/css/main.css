@@ -35,3 +35,13 @@
   background-repeat: no-repeat;
   height: 100vw;
   width: 100%; }
+
+#js-olapic_stream {
+  text-align: center; }
+
+.olapic_img {
+  width: 60%;
+  margin: 2em 1.3em; }
+
+body {
+  font-family: "lato", sans-serif; }
