@@ -6,23 +6,22 @@
 @import "./header";
 @import "./olapic_ugc";
 
-
 body {
-    font-family: "lato", sans-serif;
-    font-size: 14px;
-    line-height: 1.8em;
+  font-family: "lato", sans-serif;
+  font-size: 14px;
+  line-height: 1.8em;
 }
 
 .headline {
-    font-size: 2.2em;
-    line-height: 2.6em;
-    text-transform: uppercase;
-    font-weight: 600;
-    background: url('../../src/img/bg_headline.svg') center no-repeat;
-    background-size: contain;
-    margin: 0 auto;
-    color: #fff;
-    text-align: center;
+  font-size: 2.2em;
+  line-height: 2.6em;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: url('../../src/img/bg_headline.svg') center no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
 }
 
 .text,
@@ -30,14 +29,12 @@ body {
 .link:active,
 .link:focus,
 .link:visited,
-.link:hover
- {
-    font-weight: 400;
-    color: #000;
+.link:hover {
+  font-weight: 400;
+  color: #000;
 }
 
-.text
- {
-    font-size: 1.8em;
-    line-height: 2em;
+.text {
+  font-size: 1.8em;
+  line-height: 2em;
 }
