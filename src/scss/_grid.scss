@@ -1,14 +1,18 @@
-.container{
-  padding:2.500em 1.875em;
+.container {
+  padding: 2.5em 1.875em;
+
   .flex-grid {
     display: flex;
+
     .col {
       flex: 1;
     }
   }
+
   .flex-grid-thirds {
     display: flex;
     justify-content: space-between;
+
     .col {
       min-width: 33%;
       width: 33%;
