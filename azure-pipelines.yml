@@ -18,7 +18,7 @@ steps:
     SourceFolder: '$(Build.SourcesDirectory)'
     Contents: |
       **/*
-      !.git/**/*
+      !node_modules/**/*
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
 - task: ArchiveFiles@2
