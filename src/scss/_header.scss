@@ -1,11 +1,9 @@
 #header {
-  background-image: url("../../src/img/header_bg.png");
-  background-position: 40% top;
-  background-size: cover;
+  background-image: url("../../src/img/header_img_text.jpg");
+  background-size: contain;
   background-repeat: no-repeat;
-  min-height: 160vw;
+  min-height: 100vw;
   width: 100%;
-  padding: 25% 0;
 }
 
 /* Alt text for header image */
