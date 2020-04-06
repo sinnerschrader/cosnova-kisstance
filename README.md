@@ -19,3 +19,8 @@ npm run lint:css
 npm run lint:js
 npm run lint:all
 ```
+## clean SVG
+
+```
+npm run clean:svg
+```
