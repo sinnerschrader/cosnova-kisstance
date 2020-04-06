@@ -1,5 +1,5 @@
 .container {
-  padding: 2.500em 1.875em; }
+  padding: 2.5em 1.875em; }
   .container .flex-grid {
     display: flex; }
     .container .flex-grid .col {
@@ -13,8 +13,8 @@
       text-align: center; }
 
 #footer {
-  background: #B92447;
-  color: #ffffff;
+  background: #b92447;
+  color: #fff;
   position: sticky;
   width: 100%; }
   #footer ul {
@@ -22,7 +22,7 @@
     #footer ul li {
       list-style-type: none; }
       #footer ul li a {
-        color: #ffffff; }
+        color: #fff; }
   #footer .flex-grid-thirds .col .logo {
     width: 90%;
     height: 90%;
