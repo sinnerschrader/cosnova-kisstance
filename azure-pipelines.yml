@@ -17,9 +17,8 @@ steps:
   inputs:
     SourceFolder: '$(Build.SourcesDirectory)'
     Contents: |
-      src\**
-      dist\**
-      index.html
+      **/*
+      !.git/**/*
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
 - task: ArchiveFiles@2
