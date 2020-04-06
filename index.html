@@ -6,11 +6,9 @@
         <title>Kisstance</title>
         <link rel="stylesheet" href="./dist/css/normalize.css">
         <link rel="stylesheet" href="./dist/css/main.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,600,&display=swap">
-      <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
-
-<!-- Optional Theme Stylesheet -->
-<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,600,&display=swap">
+        <link rel="stylesheet" href="./src/vendors/glide/dist/css/glide.core.min.css">
+        <link rel="stylesheet" href="./src/vendors/glide/dist/css/glide.theme.min.css">
   </head>
 
   <body>
@@ -38,36 +36,36 @@
             <div class="glide__track" data-glide-el="track">
                 <div class="glide__slides">
                     <div class="glide__slide glide__post">
-                        <img src="./src/img/slider-image1.png" alt="">
+                        <img src="./src/img/slider-image1.png" class="slider-image" alt="">
                         <div class="slider__title--wrap"> 
                             <div class="slider__title">
-                                <h2><span>it works</span></br>Step one</h2>
+                                <p class="text"><span>How it works</span></br>Step one</p>
                             </div>
                         </div> 
                         <div class="slider__info">
-                            <p>post</br>a digital kiss using </br>the hashtag </br>#kisstance</p>
+                            <p class="text">post</br>a digital kiss using </br>the hashtag </br>#kisstance</p>
                         </div> 
                     </div>
                     <div class="glide__slide glide__tag">
-                        <img src="./src/img/slider-image2.png"  alt="">
+                        <img src="./src/img/slider-image2.png" class="slider-image" alt="">
                         <div class="slider__title--wrap">
                         <div class="slider__title">
-                                <h2><span>it works</span></br>Step one</h2>
+                                <p class="text"><span class="text-small">How it works</span></br>Step two</p>
                             </div>  
                         </div>      
                         <div class="slider__info">
-                            <p>Tag</br>@lovcosmetics,</br> @essence_cosmetics, or </br>@catrice.cosmetics</p>
+                            <p class="text">Tag</br>@lovcosmetics,</br> @essence_cosmetics, or </br>@catrice.cosmetics</p>
                         </div>
                     </div>
                     <div class="glide__slide glide__location">
-                        <img src="./src/img/slider-image3.png"  alt="">
+                        <img src="./src/img/slider-image3.png" class="slider-image" alt="">
                         <div class="slider__title--wrap">
                             <div class="slider__title">
-                                <h2><span>it works</span></br>Step one</h2>
+                                <p class="text"><span class="text-small">How it works</span></br>Step three</p>
                             </div>
                         </div>    
                         <div class="slider__info">
-                            <p>Tag</br>your location</p>
+                            <p class="text">Tag</br>your location</p>
                         </div>
                     </div>
                 </div>
@@ -77,7 +75,7 @@
                         <button class="glide__arrow--left arrow" data-glide-dir="<"><img src="./src/img/arrow.svg" /></button>
                         <button class="glide__arrow--right arrow" data-glide-dir=">"><img src="./src/img/arrow.svg" /></button>
                       </div>
-                <div class="glide__bullets" data-glide-el="controls[nav]">
+                <div class="glide__bullets custom__bullets" data-glide-el="controls[nav]">
                     <button class="glide__bullet" data-glide-dir="=0"></button>
                     <button class="glide__bullet" data-glide-dir="=1"></button>
                     <button class="glide__bullet" data-glide-dir="=2"></button>
@@ -128,23 +126,6 @@
         </div> 
     </footer> 
     <script type="module" src="./src/js/main.js"></script>
-        <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
-
-        <script>
-          new Glide('.glide').mount()
-          var name = '.glide',
-            defaults = {
-                arrows: true,
-			// {String} Arrows wrapper class
-			// {String} Right arrow
-			arrowRightClass: 'slider__arrows--right',
-			// {String} Right arrow text
-			arrowRightText: 'next',
-			// {String} Left arrow
-			arrowLeftClass: 'slider__arrows--left',
-			// {String} Left arrow text
-			arrowLeftText: 'prev',  
-            }
-        </script>
+    <script src="./src/vendors/glide/dist/glide.min.js"></script>
   </body>
 </html>
