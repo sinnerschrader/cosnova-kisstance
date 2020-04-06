@@ -32,7 +32,7 @@
   background-image: url("../../src/img/header_img_text.jpg");
   background-size: contain;
   background-repeat: no-repeat;
-  min-height: 100vw;
+  height: 100vw;
   width: 100%; }
 
 /* Alt text for header image */
