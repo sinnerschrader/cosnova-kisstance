@@ -30,6 +30,7 @@
 
 #header {
   background-image: url("../../src/img/header_img_text.jpg");
+  background-position: center top;
   background-size: contain;
   background-repeat: no-repeat;
   height: 100vw;
@@ -140,7 +141,7 @@
   line-height: 1; }
   .arrow.glide__arrow--left {
     transform: scaleX(-1);
-    top: 23%; }
+    top: 22%; }
 
 .glide__bullets.custom__bullets {
   bottom: 7em; }
