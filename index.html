@@ -2,11 +2,12 @@
 <html>
     <head>
         <meta charset="utf-8">
-
         <title>Kisstance</title>
         <link rel="stylesheet" type="text/css" href="./dist/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,600,&display=swap">
+        <link rel="stylesheet" type="text/css" href="./src/vendors/glide/dist/css/glide.core.min.css">
+        <link rel="stylesheet" type="text/css" href="./src/vendors/glide/dist/css/glide.theme.min.css">
   </head>
 
   <body>
@@ -30,6 +31,56 @@
             <img class="logo" src="./src/img/dwb.png" alt="Doctors without borders" />
         </a>
     </section>
+    <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <div class="glide__slides">
+                    <div class="glide__slide glide__post">
+                        <img src="./src/img/slider-image1.png" class="slider-image" alt="">
+                        <div class="slider__title--wrap"> 
+                            <div class="slider__title">
+                                <p class="text"><span>How it works</span></br>Step one</p>
+                            </div>
+                        </div> 
+                        <div class="slider__info">
+                            <p class="text">post</br>a digital kiss using </br>the hashtag </br>#kisstance</p>
+                        </div> 
+                    </div>
+                    <div class="glide__slide glide__tag">
+                        <img src="./src/img/slider-image2.png" class="slider-image" alt="">
+                        <div class="slider__title--wrap">
+                        <div class="slider__title">
+                                <p class="text"><span class="text-small">How it works</span></br>Step two</p>
+                            </div>  
+                        </div>      
+                        <div class="slider__info">
+                            <p class="text">Tag</br>@lovcosmetics,</br> @essence_cosmetics, or </br>@catrice.cosmetics</p>
+                        </div>
+                    </div>
+                    <div class="glide__slide glide__location">
+                        <img src="./src/img/slider-image3.png" class="slider-image" alt="">
+                        <div class="slider__title--wrap">
+                            <div class="slider__title">
+                                <p class="text"><span class="text-small">How it works</span></br>Step three</p>
+                            </div>
+                        </div>    
+                        <div class="slider__info">
+                            <p class="text">Tag</br>your location</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow--left arrow" data-glide-dir="<"><img src="./src/img/arrow.svg" /></button>
+                        <button class="glide__arrow--right arrow" data-glide-dir=">"><img src="./src/img/arrow.svg" /></button>
+                      </div>
+                <div class="glide__bullets custom__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                </div>
+            </div>    
+        </div>
     <section class="container">
         <h2 class="headline headline_background">
             Be featured
@@ -40,8 +91,6 @@
     </section>
     <section id="js-olapic_stream">
         <small class="container olapic_legend text"><a class="link" href="https://www.olapic.com/" target="_blank" title="Olapic by Monotype" rel="noreferrer">by olapic</a></small>
-    </section>
-    <section id="js-olapic_stream">
     </section>
     <footer id="footer">        
         <div class="container">
@@ -74,6 +123,7 @@
         </div> 
     </footer> 
     <script type="module" src="./src/js/main.js"></script>
+    <script src="./src/vendors/glide/dist/glide.min.js"></script>
     <script type="module" src="./src/js/analytics.js"></script>
   </body>
 </html>

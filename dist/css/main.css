@@ -24,15 +24,16 @@
       #footer ul li a {
         color: #fff; }
   #footer .flex-grid-thirds .col .logo {
-    width: 90%;
-    height: 90%;
+    width: 100px;
+    height: 100px;
     object-fit: cover; }
 
 #header {
   background-image: url("../../src/img/header_img_text.jpg");
+  background-position: center top;
   background-size: contain;
   background-repeat: no-repeat;
-  min-height: 100vw;
+  height: 100vw;
   width: 100%; }
 
 /* Alt text for header image */
@@ -60,6 +61,94 @@
 .olapic_legend {
   text-align: right;
   display: block; }
+
+.glide .glide__slide .text {
+  line-height: 1;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+  margin: 0;
+  padding: 10px; }
+  .glide .glide__slide .text .text-small {
+    font-size: 18px; }
+
+.glide .glide__slide .slider-image {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover; }
+
+.glide .glide__slide .slider__title--wrap {
+  position: relative; }
+
+.glide .glide__slide .slider__title {
+  background-image: url("../../src/img/lipstick-background.png");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 95px;
+  position: absolute;
+  top: -50px;
+  z-index: 100;
+  text-align: center; }
+
+.glide .glide__post {
+  background-color: #EB9240; }
+  .glide .glide__post .slider__info {
+    background-image: url("../../src/img/camera.png");
+    background-repeat: no-repeat;
+    background-position: center center; }
+
+.glide .glide__tag {
+  background-color: #D19891; }
+  .glide .glide__tag .slider__info {
+    background-image: url("../../src/img/notes.png");
+    background-repeat: no-repeat;
+    background-position: center center; }
+
+.glide .glide__location {
+  background-color: #C66E98; }
+  .glide .glide__location .slider__info {
+    background-image: url("../../src/img/location.png");
+    background-repeat: no-repeat;
+    background-position: center center; }
+
+.glide .slider__info {
+  padding: 66px 55px;
+  font-size: 24px;
+  min-height: 320px; }
+  .glide .slider__info .text {
+    font-size: 25px;
+    padding: 20px;
+    font-weight: 200; }
+
+.arrow {
+  position: absolute;
+  display: block;
+  top: 25%;
+  z-index: 2;
+  color: white;
+  padding: 9px 12px;
+  background-color: transparent;
+  opacity: 1;
+  border: none;
+  cursor: pointer;
+  transition: opacity 150ms ease, border 300ms ease-in-out;
+  transform: translateY(-50%);
+  line-height: 1; }
+  .arrow.glide__arrow--left {
+    transform: scaleX(-1);
+    top: 22%; }
+
+.glide__bullets.custom__bullets {
+  bottom: 7em; }
+  .glide__bullets.custom__bullets .glide__bullet {
+    border-radius: 0;
+    width: 22px;
+    height: 6px; }
 
 .impressum-header {
   width: 100%;

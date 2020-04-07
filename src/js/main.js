@@ -44,3 +44,6 @@ function getImageUrls() {
 }
 
 getImageUrls();
+
+// mount Glide.js
+new Glide('.glide').mount()
