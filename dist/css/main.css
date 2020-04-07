@@ -63,33 +63,28 @@
 
 .impressum-header {
   width: 100%;
-  text-align: center; }
-  .impressum-header img:nth-child(2) {
-    position: absolute;
-    top: 4%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-  .impressum-header img:first-child {
-    width: 100%;
-    position: relative; }
+  height: 400px;
+  text-align: center;
+  background: url("../../src/img/imprint_header.png");
+  background-size: cover; }
+
+.link_back-home {
+  width: 60px;
+  position: absolute;
+  left: 40px;
+  top: 70px; }
+
+.kisstance_logo {
+  width: 40%;
+  margin-top: 30px;
+  /* offset-x | offset-y | blur-radius | color */
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.5)); }
 
 .impressum {
-  padding-top: 0;
-  font-family: Helvetica, Arial, sans-serif; }
-  .impressum h1 {
-    font-weight: 500;
-    margin: 0 0 100px 0; }
-  .impressum h3 {
-    text-transform: uppercase;
-    font-weight: 300;
-    margin-top: 40px; }
-  .impressum ul {
-    padding: 0; }
-    .impressum ul li {
-      font-weight: 300;
-      list-style-type: none; }
-  .impressum p {
-    font-weight: 300; }
+  padding-top: 0; }
+  .impressum .text {
+    padding-bottom: 40px; }
 
 body {
   font-family: "lato", sans-serif;
@@ -101,11 +96,21 @@ body {
   line-height: 2.6em;
   text-transform: uppercase;
   font-weight: 600;
+  margin: 0 auto; }
+
+.headline_background {
   background: url("../../src/img/bg_headline.svg") center no-repeat;
   background-size: contain;
   margin: 0 auto;
   color: #fff;
   text-align: center; }
+
+.sub_headline {
+  font-size: 2em;
+  line-height: 2.4em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 auto; }
 
 .text,
 .link,
