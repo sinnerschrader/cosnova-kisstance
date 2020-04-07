@@ -1,4 +1,5 @@
-import { OLAPIC_API_KEY, OLAPIC_URL } from './config.js';
+import { OLAPIC_API_KEY, OLAPIC_URL, SHEET_ID, SHEET_NAME } from './config.js';
+import { getAuthToken, getSpreadSheetValues } from "./spreadsheet.js";
 
 function returnImageTags(arr) {
   const media = arr.data._embedded.media;
@@ -43,6 +44,29 @@ function getImageUrls() {
   httpRequest.send();
 }
 
+async function getSumOfAllPosts() {
+  try {
+    const auth = await getAuthToken();
+
+    const response = await getSpreadSheetValues({
+      SHEET_ID,
+      SHEET_NAME,
+      auth
+    });
+
+    const values = response.data.values;
+    const reqValues = values.slice(1, values.length);
+
+    let sum = 0;
+    reqValues.forEach(item => {
+      sum += parseInt(item[1]);
+    });
+    console.log('total posts: ', sum)
+  } catch(error) {
+    console.log(error.message, error.stack);
+  }
+}
+
 getImageUrls();
 
 // mount Glide.js
@@ -52,3 +76,4 @@ new Glide('.glide').mount()
 setTimeout(function(){
     odometer.innerHTML = 611500;
 }, 1000);
+getSumOfAllPosts();

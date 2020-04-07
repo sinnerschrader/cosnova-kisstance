@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
-    "node-sass": "^4.13.1"
+    "node-sass": "^4.13.1",
+    "googleapis": "^48.0.0"
   }
 }
