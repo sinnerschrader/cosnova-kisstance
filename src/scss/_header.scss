@@ -6,3 +6,19 @@
   height: 100vw;
   width: 100%;
 }
+
+/* Alt text for header image */
+.header_claim_alt {
+  visibility: hidden;
+}
+
+.header_img {
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+.header_dwb .logo {
+  min-height: 250px;
+  padding: 50px;
+}

@@ -6,41 +6,124 @@
         <title>Kisstance</title>
         <link rel="stylesheet" href="./dist/css/normalize.css">
         <link rel="stylesheet" href="./dist/css/main.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,600,&display=swap">
+        <link rel="stylesheet" href="./src/vendors/glide/dist/css/glide.core.min.css">
+        <link rel="stylesheet" href="./src/vendors/glide/dist/css/glide.theme.min.css">
   </head>
 
   <body>
     <section id="header">
-  <!-- @todo: Switch BG image    
-    <div>
-        Keep your <br />
-        <img src="./src/img/kisstance_logo.png" alt="#kisstance">
-        and we'll donate!
-      </div> -->
+        <div class="header_claim_alt">
+            Keep your #kisstance and we'll donate!
+        </div>
+    </section>
+    <section class="container">
+        <div class="header_img">
+            <img  src="./src/img/heart.png" alt="HEART" />
+        </div>
+        <p class="text">
+            During these times, it’s important we keep our distance from one another, but still show our love virtually! 
+            That’s why we encourage you to keep your #kisstance! And for every hashtag of #kisstance you share, we’ll add 5 Euros 
+            to our donation of 500,000 Euros to <a class="link" href="https://www.doctorswithoutborders.org/" target="_blank" title="Visit doctors without borders" rel="noreferrer">
+                doctors without borders
+            </a>. Together, we can make it to a million! 
+        </p>
+        <a class="header_img" href="https://www.doctorswithoutborders.org/" target="_blank" title="Visit doctors without borders" rel="noreferrer">
+            <img class="logo" src="./src/img/dwb.png" alt="Doctors without borders" />
+        </a>
+    </section>
+    <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <div class="glide__slides">
+                    <div class="glide__slide glide__post">
+                        <img src="./src/img/slider-image1.png" class="slider-image" alt="">
+                        <div class="slider__title--wrap"> 
+                            <div class="slider__title">
+                                <p class="text"><span>How it works</span></br>Step one</p>
+                            </div>
+                        </div> 
+                        <div class="slider__info">
+                            <p class="text">post</br>a digital kiss using </br>the hashtag </br>#kisstance</p>
+                        </div> 
+                    </div>
+                    <div class="glide__slide glide__tag">
+                        <img src="./src/img/slider-image2.png" class="slider-image" alt="">
+                        <div class="slider__title--wrap">
+                        <div class="slider__title">
+                                <p class="text"><span class="text-small">How it works</span></br>Step two</p>
+                            </div>  
+                        </div>      
+                        <div class="slider__info">
+                            <p class="text">Tag</br>@lovcosmetics,</br> @essence_cosmetics, or </br>@catrice.cosmetics</p>
+                        </div>
+                    </div>
+                    <div class="glide__slide glide__location">
+                        <img src="./src/img/slider-image3.png" class="slider-image" alt="">
+                        <div class="slider__title--wrap">
+                            <div class="slider__title">
+                                <p class="text"><span class="text-small">How it works</span></br>Step three</p>
+                            </div>
+                        </div>    
+                        <div class="slider__info">
+                            <p class="text">Tag</br>your location</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow--left arrow" data-glide-dir="<"><img src="./src/img/arrow.svg" /></button>
+                        <button class="glide__arrow--right arrow" data-glide-dir=">"><img src="./src/img/arrow.svg" /></button>
+                      </div>
+                <div class="glide__bullets custom__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                </div>
+            </div>    
+        </div>
+    <section class="container">
+        <h2 class="headline">
+            Be featured
+        </h2>
+        <p class="text">
+        We want to showcase the kisses behind #kisstance by sharing your hashtagged photos — See all the kisses making a difference here in our #kisstance photo album!
+        </p>
+    </section>
+    <section id="js-olapic_stream">
+        <small class="container olapic_legend text"><a class="link" href="https://www.olapic.com/" target="_blank" title="Olapic by Monotype" rel="noreferrer">by olapic</a></small>
     </section>
     <footer id="footer">        
         <div class="container">
             <div class="flex-grid-thirds">
-                <a class="col" href="https://www.catrice.eu/" title="Catrice"><img class="logo" src="./src/img/catrice.png" alt="catrice"></a>
-                <a class="col" href="https://lov.eu/" title="Love"><img class="logo" src="./src/img/love.png" alt="love"></a>
-                <a class="col" href="https://www.essence.eu/" title="Essence"><img class="logo" src="./src/img/essence.png" alt="essence"></a>
+                <a class="col" href="https://www.catrice.eu/" title="Catrice" target="_blank" rel="noreferrer">
+                        <img class="logo" src="./src/img/catrice_logo.png" alt="Catrice logo">
+                </a>
+                <a class="col" href="https://lov.eu/" title="Love" target="_blank" rel="noreferrer">
+                    <img class="logo" src="./src/img/lov_logo.jpg" alt="love logo">
+                </a>
+                <a class="col" href="https://www.essence.eu/" title="Essence"  target="_blank" rel="noreferrer">
+                    <img class="logo" src="./src/img/essence_logo.png" alt="essence logo">
+                </a>
             </div>
-            <ul>
+            <ul class="text">
                 <li>
-                    <a href="#">Imprint</a>
+                    <a href="#" title="Imprint">Imprint</a>
                 </li>
                 <li>
-                    <a href="#">Data Protection Statement</a>
+                    <a href="#" title="Data Protection Statement">Data Protection Statement</a>
                 </li>
                 <li>
-                    <a href="#">General Terms of Use</a>
+                    <a href="#" title="General Terms of Use">General Terms of Use</a>
                 </li>
                 <li>
-                    <a href="#">Dispute Resolution</a>
+                    <a href="#" title="Dispute Resolution">Dispute Resolution</a>
                 </li>
             </ul>
             <p>&copy; Cosnova GmbH cosnova.com</p>
         </div> 
     </footer> 
+    <script type="module" src="./src/js/main.js"></script>
+    <script src="./src/vendors/glide/dist/glide.min.js"></script>
   </body>
 </html>

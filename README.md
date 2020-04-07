@@ -18,4 +18,11 @@ All options:
 npm run lint:css
 npm run lint:js
 npm run lint:all
+npm run lint:css:fix
+npm run lint:js:fix
+```
+## clean SVG
+
+```
+npm run clean:svg
 ```
