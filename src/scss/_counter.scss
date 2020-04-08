@@ -1,0 +1,45 @@
+.odometer {
+    line-height: initial;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.counter_container {
+    height:700px;
+    background-image: url('../../src/img/counter-background.png');
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #fff;
+    .counter_numbers {
+        width: fit-content;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .euro-sign {
+            font-size: 50px;
+            vertical-align: middle;
+        }
+        .text-small{
+            line-height:1;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 900;
+            margin: 0;
+        }
+        .counter-hearts{
+            position: absolute;
+            background-image: url(../../src/img/counter-hearts.png);
+            width: 90px;
+            height: 155px;
+            background-size: contain;
+            display: inline-block;
+            background-repeat: no-repeat;
+            bottom: 55px;
+            left: 100px;
+        }
+    }
+}

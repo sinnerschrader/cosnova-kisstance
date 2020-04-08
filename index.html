@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,600,&display=swap">
         <link rel="stylesheet" type="text/css" href="./src/vendors/glide/dist/css/glide.core.min.css">
         <link rel="stylesheet" type="text/css" href="./src/vendors/glide/dist/css/glide.theme.min.css">
+        <link rel="stylesheet" type="text/css" href="./src/vendors/odometer/odometer.css">
   </head>
 
   <body>
@@ -30,6 +31,21 @@
         <a class="header_img" href="https://www.doctorswithoutborders.org/" target="_blank" title="Visit doctors without borders" rel="noreferrer">
             <img class="logo" src="./src/img/dwb.png" alt="Doctors without borders" />
         </a>
+    </section class="counter">
+        <div class="container">
+            <p class="text">We're keeping track of every #kisstance mention, so we can see how close we are to a million!
+                Keep your #kisstance - and we'll keep adding to the amount!</p>
+            <p class="text">See how many people around the world arre keeping their #kisstance to do their part!</p>      
+        </div>
+        <div class="counter_container">
+            <div class="counter_numbers">
+                <p class="text-small">We've donated:<span class="counter-hearts"></span></p>
+                <div id="odometer" class="odometer">503392</div>
+                <span class="euro-sign">&euro;</span>
+            </div>
+        </div>
+    <section>
+
     </section>
     <div class="glide">
             <div class="glide__track" data-glide-el="track">
@@ -38,7 +54,7 @@
                         <img src="./src/img/slider-image1.png" class="slider-image" alt="">
                         <div class="slider__title--wrap"> 
                             <div class="slider__title">
-                                <p class="text"><span>How it works</span></br>Step one</p>
+                                <p class="text"><span class="text-small">How it works</span></br>Step one</p>
                             </div>
                         </div> 
                         <div class="slider__info">
@@ -124,6 +140,7 @@
     </footer> 
     <script type="module" src="./src/js/main.js"></script>
     <script src="./src/vendors/glide/dist/glide.min.js"></script>
+    <script src="./src/vendors/odometer/odometer.min.js"></script>
     <script type="module" src="./src/js/analytics.js"></script>
   </body>
 </html>

@@ -47,3 +47,8 @@ getImageUrls();
 
 // mount Glide.js
 new Glide('.glide').mount()
+
+// odometer counter
+setTimeout(function(){
+    odometer.innerHTML = 503500;
+}, 1000);
