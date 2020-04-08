@@ -22,7 +22,7 @@ body {
 }
 
 .container_body {
-    max-width: 760px;
+    max-width: 980px;
     min-width: 320px;
     margin: 0 auto;
 }
@@ -37,9 +37,9 @@ body {
 
 .headline_background {
   background: url('../../src/img/bg_headline.svg') center no-repeat;
-  background-size: contain;
+  background-size: cover;
   margin: 0 auto;
-  // color: #fff;
+  color: #fff;
   text-align: center;
 }
 

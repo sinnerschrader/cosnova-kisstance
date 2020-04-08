@@ -5,8 +5,8 @@
   background-repeat: no-repeat;
   height: 100vw;
   width: 100%;
-  max-width: 760px;
-  max-height: 760px;
+  max-width: 980px;
+  max-height: 980px;
 }
 
 /* Alt text for header image */
@@ -20,7 +20,11 @@
   display: block;
 }
 
+.header_dwb {
+  display: block;
+  text-align: center;
+}
+
 .header_dwb .logo {
-  min-height: 250px;
   padding: 50px;
 }

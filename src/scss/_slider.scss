@@ -1,17 +1,14 @@
 .glide{
     .glide__slide {
         .text{
-            line-height:1;
+            line-height: 1em;
             color: #fff;
             text-transform: uppercase;
             text-align: center;
             font-size: 32px;
-            font-weight: 900;
+            font-weight: 600;
             margin: 0;
             padding: 10px;
-            .text-small {
-                font-size: 18px;
-            }
         }
         .slider-image {
             width: 100%;
@@ -24,11 +21,10 @@
         }
         .slider__title{
             background-image: url('../../src/img/lipstick-background.png');
-            background-size: auto;
+            background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
             width: 100%;
-            height: 95px;
             position: absolute;
             top: -50px;
             z-index: 100;
