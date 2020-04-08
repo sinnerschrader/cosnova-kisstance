@@ -12,10 +12,19 @@
 // Pages
 @import "./imprint";
 
+// Optimisation
+@import "./retina";
+
 body {
   font-family: "lato", sans-serif;
   font-size: 14px;
   line-height: 1.8em;
+}
+
+.container_body {
+    max-width: 980px;
+    min-width: 320px;
+    margin: 0 auto;
 }
 
 .headline {
@@ -28,7 +37,7 @@ body {
 
 .headline_background {
   background: url('../../src/img/bg_headline.svg') center no-repeat;
-  background-size: contain;
+  background-size: cover;
   margin: 0 auto;
   color: #fff;
   text-align: center;
