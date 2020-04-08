@@ -12,6 +12,46 @@
       width: 33%;
       text-align: center; }
 
+.odometer {
+  line-height: initial;
+  font-size: 4.2em;
+  font-weight: 600; }
+
+.counter_container {
+  height: 700px;
+  background-image: url("../../src/img/counter-background.png");
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #fff; }
+  .counter_container .counter_numbers {
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .counter_container .counter_numbers .euro-sign {
+      font-size: 4.2em;
+      vertical-align: middle; }
+    .counter_container .counter_numbers .text-small {
+      line-height: 1;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1.4em;
+      font-weight: 600;
+      margin: 0; }
+    .counter_container .counter_numbers .counter-hearts {
+      position: absolute;
+      background-image: url(../../src/img/counter-hearts.png);
+      width: 90px;
+      height: 155px;
+      background-size: contain;
+      display: inline-block;
+      background-repeat: no-repeat;
+      bottom: 55px;
+      left: 100px; }
+
 #footer {
   background: #b92447;
   color: #fff;
