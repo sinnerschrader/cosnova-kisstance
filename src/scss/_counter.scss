@@ -1,7 +1,7 @@
 .odometer {
     line-height: initial;
-    font-size: 50px;
-    font-weight: 900;
+    font-size: 4.2em;
+    font-weight: 600;
 }
 
 .counter_container {
@@ -19,15 +19,15 @@
         left: 50%;
         transform: translate(-50%, -50%);
         .euro-sign {
-            font-size: 50px;
+            font-size: 4.2em;
             vertical-align: middle;
         }
         .text-small{
             line-height:1;
             color: #fff;
             text-transform: uppercase;
-            font-size: 18px;
-            font-weight: 900;
+            font-size: 1.4em;
+            font-weight: 600;
             margin: 0;
         }
         .counter-hearts{

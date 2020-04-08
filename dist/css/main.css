@@ -14,8 +14,8 @@
 
 .odometer {
   line-height: initial;
-  font-size: 50px;
-  font-weight: 900; }
+  font-size: 4.2em;
+  font-weight: 600; }
 
 .counter_container {
   height: 700px;
@@ -32,14 +32,14 @@
     left: 50%;
     transform: translate(-50%, -50%); }
     .counter_container .counter_numbers .euro-sign {
-      font-size: 50px;
+      font-size: 4.2em;
       vertical-align: middle; }
     .counter_container .counter_numbers .text-small {
       line-height: 1;
       color: #fff;
       text-transform: uppercase;
-      font-size: 18px;
-      font-weight: 900;
+      font-size: 1.4em;
+      font-weight: 600;
       margin: 0; }
     .counter_container .counter_numbers .counter-hearts {
       position: absolute;
