@@ -1,6 +1,6 @@
 .odometer {
     line-height: initial;
-    font-size: 3em;
+    font-size: 2.9em;
     font-weight: 600;
 }
 
@@ -19,7 +19,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         .euro-sign {
-            font-size: 2.8em;
+            font-size: 2.6em;
             vertical-align: middle;
         }
         .text-small{
@@ -38,8 +38,8 @@
             background-size: contain;
             display: inline-block;
             background-repeat: no-repeat;
-            bottom: 55px;
-            left: 100px;
+            bottom: 90px;
+            right: 0;
         }
     }
 }

@@ -50,5 +50,5 @@ new Glide('.glide').mount()
 
 // odometer counter
 setTimeout(function(){
-    odometer.innerHTML = 503500;
+    odometer.innerHTML = 611500;
 }, 1000);
