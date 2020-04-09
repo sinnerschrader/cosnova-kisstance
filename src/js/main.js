@@ -46,9 +46,11 @@ function getImageUrls() {
 getImageUrls();
 
 // mount Glide.js
-new Glide('.glide').mount()
+new Glide('.glide').mount();
+
 
 // odometer counter
 setTimeout(function(){
-    odometer.innerHTML = 611500;
+
+    window.odometer.innerHTML = 611500;
 }, 1000);
