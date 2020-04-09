@@ -68,8 +68,9 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 700px) 
 
   .impressum-header { height: 400px; }
 
-  .odometer { font-size: 4.2em !important; }
-  .euro-sign { font-size: 4em !important; }
+  .odometer { font-size: 6em !important; }
+  .euro-sign { font-size: 5.8em !important; }
+  .counter_container .counter_numbers .text-small { font-size: 2em !important; }
 
   .header_dwb .logo { min-height: 250px !important; }
 

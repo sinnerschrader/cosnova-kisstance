@@ -14,7 +14,7 @@
 
 .odometer {
   line-height: initial;
-  font-size: 3em;
+  font-size: 2.9em;
   font-weight: 600; }
 
 .counter_container {
@@ -32,13 +32,13 @@
     left: 50%;
     transform: translate(-50%, -50%); }
     .counter_container .counter_numbers .euro-sign {
-      font-size: 2.8em;
+      font-size: 2.6em;
       vertical-align: middle; }
     .counter_container .counter_numbers .text-small {
       line-height: 1;
       color: #fff;
       text-transform: uppercase;
-      font-size: 2em;
+      font-size: 1.4em;
       font-weight: 600;
       margin: 0; }
     .counter_container .counter_numbers .counter-hearts {
@@ -256,9 +256,11 @@
   .impressum-header {
     height: 400px; }
   .odometer {
-    font-size: 4.2em !important; }
+    font-size: 6em !important; }
   .euro-sign {
-    font-size: 4em !important; }
+    font-size: 5.8em !important; }
+  .counter_container .counter_numbers .text-small {
+    font-size: 2em !important; }
   .header_dwb .logo {
     min-height: 250px !important; }
   .slider__info .text {
