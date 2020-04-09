@@ -38,7 +38,7 @@
       line-height: 1;
       color: #fff;
       text-transform: uppercase;
-      font-size: 1.4em;
+      font-size: 2em;
       font-weight: 600;
       margin: 0; }
     .counter_container .counter_numbers .counter-hearts {
@@ -49,8 +49,8 @@
       background-size: contain;
       display: inline-block;
       background-repeat: no-repeat;
-      bottom: 55px;
-      left: 100px; }
+      bottom: 90px;
+      right: 0; }
 
 #footer {
   background: #b92447;
