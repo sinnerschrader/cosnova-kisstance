@@ -75,30 +75,19 @@ getData();
 getImageUrls();
 
 //Cookie Notification
-function cookieNotification() {
-	if (!localStorage.getItem('.cookie-consent')) {
-		var request = new XMLHttpRequest();
-		request.onreadystatechange = function() {
-			if (this.readyState == 4 && this.status == 200) {
-					document.body.innerHTML += '\
-					<div class="cookie-consent" style="position:fixed;padding:20px;left:0;right:0;bottom:0;background-color:#000;color:#fff;z-index:99999;">\
- 			        <p>This website uses cookies - detailed information on the use of cookies on this website and on your rights as a data subject are provided in our <a href="#" target="_blank" style="color:#fff;">Privacy Policy</a></p> \
-		            <a href="#" class="cookie-agree" style="text-align:center;margin-bottom: 15px;background-color:#C7777A;display:block;margin:0 auto;max-width:400px;padding:15px;border:none;color:#fff;text-decoration:none;font-size:18px;">Agree</a>\
-                    </div>\
-					';
-					document.querySelector('.cookie-consent .cookie-agree').onclick = function(e) {
-						e.preventDefault();
-						document.querySelector('.cookie-consent').style.display = 'none';
-						localStorage.setItem('.cookie-consent', true);
-					};
-				}
-		    };
-		request.open('GET', 'http://ip-api.com/json', true);
-		request.send();
-	}
-};
+var cookieNotificationElement = document.getElementById('cookie-notification');
+var acceptCookies = document.querySelector('.accept-cookie');
 
-cookieNotification();
+acceptCookies.addEventListener("click", function(){
+  localStorage.setItem("cookieNotification", "accepted");
+  cookieNotificationElement.classList.add('hide');
+});
+
+if(localStorage.getItem("cookieNotification") === null){
+  cookieNotificationElement.classList.remove('hide');
+} else {
+  cookieNotificationElement.classList.add('hide');
+}
 
 // mount Glide.js slider
 // eslint-disable-next-line
