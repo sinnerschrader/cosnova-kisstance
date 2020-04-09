@@ -1,97 +1,110 @@
-.glide{
-    .glide__slide {
-        .text{
-            line-height: 1em;
-            color: #fff;
-            text-transform: uppercase;
-            text-align: center;
-            font-size: 32px;
-            font-weight: 600;
-            margin: 0;
-            padding: 10px;
-        }
-        .slider-image {
-            width: 100%;
-            height: 100%;
-            min-height: 320px;
-            object-fit: cover;
-        }
-        .slider__title--wrap{
-            position: relative;
-        }
-        .slider__title{
-            background-image: url('../../src/img/lipstick-background.png');
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-            width: 100%;
-            position: absolute;
-            top: -50px;
-            z-index: 100;
-            text-align: center;
-        }
+.glide {
+  .glide__slide {
+    .text {
+      line-height: 1em;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 32px;
+      font-weight: 600;
+      margin: 0;
+      padding: 10px;
     }
-    .glide__post {
-        background-color: #EB9240;
-        .slider__info {
-            background-image: url('../../src/img/camera.png');
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
+
+    .slider-image {
+      width: 100%;
+      height: 100%;
+      min-height: 320px;
+      object-fit: cover;
     }
-    .glide__tag {
-        background-color: #D19891;
-        .slider__info {
-            background-image: url('../../src/img/notes.png');
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
+
+    .slider__title--wrap {
+      position: relative;
     }
-    .glide__location {
-        background-color: #C66E98;
-        .slider__info {
-            background-image: url('../../src/img/location.png');
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
+
+    .slider__title {
+      background-image: url('../../src/img/lipstick-background.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      position: absolute;
+      top: -50px;
+      z-index: 100;
+      text-align: center;
     }
+  }
+
+  .glide__post {
+    background-color: #eb9240;
+
     .slider__info {
-        padding: 66px 55px;
-        font-size:24px;
-        min-height: 320px;
-        .text{
-            font-size: 25px;
-            padding: 20px;
-            font-weight: 200;
-        }
+      background-image: url('../../src/img/camera.png');
+      background-repeat: no-repeat;
+      background-position: center center;
     }
+  }
+
+  .glide__tag {
+    background-color: #d19891;
+
+    .slider__info {
+      background-image: url('../../src/img/notes.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+
+  .glide__location {
+    background-color: #c66e98;
+
+    .slider__info {
+      background-image: url('../../src/img/location.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+
+  .slider__info {
+    padding: 66px 55px;
+    font-size: 24px;
+    min-height: 320px;
+
+    .text {
+      font-size: 25px;
+      padding: 20px;
+      font-weight: 200;
+    }
+  }
 }
+
 .arrow {
-    position: absolute;
-    display: block;
-    top: 25%;
-    z-index: 2;
-    color: white;
-    padding: 9px 12px;
-    background-color: transparent;
-    opacity: 1;
-    border: none;
-    cursor: pointer;
-    transition: opacity 150ms ease, border 300ms ease-in-out;
-    transform: translateY(-50%);
-    line-height: 1;
-    &.glide__arrow--left{
-        transform: scaleX(-1);
-        top: 22%; 
-    }
-}  
+  position: absolute;
+  display: block;
+  top: 25%;
+  z-index: 2;
+  color: white;
+  padding: 9px 12px;
+  background-color: transparent;
+  opacity: 1;
+  border: none;
+  cursor: pointer;
+  transition: opacity 150ms ease, border 300ms ease-in-out;
+  transform: translateY(-50%);
+  line-height: 1;
+
+  &.glide__arrow--left {
+    transform: scaleX(-1);
+    top: 22%;
+  }
+}
 
 .glide__bullets.custom__bullets {
-    bottom: 7em; 
-    .glide__bullet {
-        border-radius: 0;
-        width: 22px;
-        height: 6px; 
-    }
+  bottom: 7em;
+
+  .glide__bullet {
+    border-radius: 0;
+    width: 22px;
+    height: 6px;
+  }
 }
-    

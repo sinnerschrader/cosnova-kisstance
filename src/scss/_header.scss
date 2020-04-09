@@ -23,8 +23,17 @@
 .header_dwb {
   display: block;
   text-align: center;
+  background-image: url("../../src/img/dwb_bg.png");
+  background-position: center 85px;
+  background-size: 150vw;
+  background-repeat: no-repeat;
+  margin: 0 -1.875em;
+  padding: 0 0 150px;
 }
 
 .header_dwb .logo {
-  padding: 50px;
+  width: 60%;
+  margin: 50px;
+  -webkit-filter: grayscale(1) drop-shadow(-5px 15px 20px rgba(0, 0, 0, 0.1));
+  filter: grayscale(1) drop-shadow(-5px 15px 20px rgba(0, 0, 0, 0.1));
 }

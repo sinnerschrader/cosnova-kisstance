@@ -90,10 +90,19 @@
 
 .header_dwb {
   display: block;
-  text-align: center; }
+  text-align: center;
+  background-image: url("../../src/img/dwb_bg.png");
+  background-position: center 85px;
+  background-size: 150vw;
+  background-repeat: no-repeat;
+  margin: 0 -1.875em;
+  padding: 0 0 150px; }
 
 .header_dwb .logo {
-  padding: 50px; }
+  width: 60%;
+  margin: 50px;
+  -webkit-filter: grayscale(1) drop-shadow(-5px 15px 20px rgba(0, 0, 0, 0.1));
+  filter: grayscale(1) drop-shadow(-5px 15px 20px rgba(0, 0, 0, 0.1)); }
 
 #js-olapic_stream {
   text-align: center;
@@ -139,21 +148,21 @@
   text-align: center; }
 
 .glide .glide__post {
-  background-color: #EB9240; }
+  background-color: #eb9240; }
   .glide .glide__post .slider__info {
     background-image: url("../../src/img/camera.png");
     background-repeat: no-repeat;
     background-position: center center; }
 
 .glide .glide__tag {
-  background-color: #D19891; }
+  background-color: #d19891; }
   .glide .glide__tag .slider__info {
     background-image: url("../../src/img/notes.png");
     background-repeat: no-repeat;
     background-position: center center; }
 
 .glide .glide__location {
-  background-color: #C66E98; }
+  background-color: #c66e98; }
   .glide .glide__location .slider__info {
     background-image: url("../../src/img/location.png");
     background-repeat: no-repeat;
@@ -261,8 +270,9 @@
     font-size: 5.8em !important; }
   .counter_container .counter_numbers .text-small {
     font-size: 2em !important; }
-  .header_dwb .logo {
-    min-height: 250px !important; }
+  .header_dwb {
+    background-position: center 150px !important;
+    padding: 0 0 300px !important; }
   .slider__info .text {
     margin-top: 1em !important;
     line-height: 1.6em !important; } }
