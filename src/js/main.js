@@ -1,8 +1,8 @@
-import { OLAPIC_API_KEY, OLAPIC_URL, SHEET_ID, SHEET_NAME } from './config.js';
-import { getAuthToken, getSpreadSheetValues } from "./spreadsheet.js";
+import { OLAPIC_API_KEY, OLAPIC_URL, SHEET_URL } from './config.js';
 
 function returnImageTags(arr) {
   const media = arr.data._embedded.media;
+  const stream = document.getElementById('js-olapic_stream');
   let tags = '';
   for (let i = 0; i < 4; i++) {
     tags = tags + (
@@ -13,7 +13,18 @@ function returnImageTags(arr) {
         + '"> <br />'
     );
   }
-  document.getElementById('js-olapic_stream').innerHTML = tags + document.getElementById('js-olapic_stream').innerHTML;
+  stream.innerHTML = tags + document.getElementById('js-olapic_stream').innerHTML;
+}
+
+function initOdometer(res) {
+  let sum;
+  if (res !== isNaN) {
+    sum = res;
+  } else {
+    sum = 500000;
+  }
+  // eslint-disable-next-line
+  odometer.innerHTML = sum;
 }
 
 function getImages(url) {
@@ -27,6 +38,19 @@ function getImages(url) {
   };
   request.open('GET', url, true);
   request.send();
+}
+
+function getData() {
+  const httpRequest = new XMLHttpRequest();
+  const url = SHEET_URL;
+
+  httpRequest.onreadystatechange = function () {
+    if (this.readyState === 4 && this.status === 200) {
+      initOdometer(this.response);
+    }
+  };
+  httpRequest.open('GET', url, true);
+  httpRequest.send();
 }
 
 function getImageUrls() {
@@ -44,36 +68,12 @@ function getImageUrls() {
   httpRequest.send();
 }
 
-async function getSumOfAllPosts() {
-  try {
-    const auth = await getAuthToken();
+// get donation sum from google spreadsheet (as CVS)
+getData();
 
-    const response = await getSpreadSheetValues({
-      SHEET_ID,
-      SHEET_NAME,
-      auth
-    });
-
-    const values = response.data.values;
-    const reqValues = values.slice(1, values.length);
-
-    let sum = 0;
-    reqValues.forEach(item => {
-      sum += parseInt(item[1]);
-    });
-    console.log('total posts: ', sum)
-  } catch(error) {
-    console.log(error.message, error.stack);
-  }
-}
-
+// get image URLs from OlaPic
 getImageUrls();
 
-// mount Glide.js
-new Glide('.glide').mount()
-
-// odometer counter
-setTimeout(function(){
-    odometer.innerHTML = 611500;
-}, 1000);
-getSumOfAllPosts();
+// mount Glide.js slider
+// eslint-disable-next-line
+new Glide('.glide').mount();
