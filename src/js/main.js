@@ -70,10 +70,12 @@ async function getSumOfAllPosts() {
 getImageUrls();
 
 // mount Glide.js
-new Glide('.glide').mount()
+new Glide('.glide').mount();
+
 
 // odometer counter
 setTimeout(function(){
     odometer.innerHTML = 611500;
 }, 1000);
 getSumOfAllPosts();
+
