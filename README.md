@@ -21,11 +21,22 @@ npm run lint:all
 npm run lint:css:fix
 npm run lint:js:fix
 ```
+
 ## clean SVG
 
 ```
 npm run clean:svg
 ```
+
+## commit
+
+Please follow the [Conventional Commit Style](https://www.conventionalcommits.org/en/v1.0.0-beta.4/).
+
+[Husky](https://github.com/typicode/husky) adds pre hooks.
+Pre-commit will run `npm run lint:all:fix` and prevent commits with linting errors.
+Pre-push will lint again.
+
+
 ## deployment process
 
 Make sure to merge everything to master to keep it up-to-date. 

@@ -10,6 +10,7 @@
     "lint:scss:fix": "stylelint --fix './src/scss/*.scss'",
     "lint:js:fix": "eslint --fix './src/js/*.js'",
     "lint:all": "npm run lint:scss && npm run lint:js",
+    "lint:all:fix": "npm run lint:scss:fix && npm run lint:js:fix",
     "build:css": "node-sass --include-path scss src/scss/main.scss ./dist/css/main.css",
     "watch:css": "npm run build:css && npm run build:css -- -w",
     "start": "browser-sync start --server --files='./*.html,./*.css', nodemon -e scss -x 'npm run build:css', node-sass --watch scss -o css, 'npm run build:css'"
@@ -24,10 +25,17 @@
   "bugs": {
     "url": "https://git.sinnerschrader.com/olagas/kisstance/-/issues"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:all:fix",
+      "pre-push": "npm run lint:all"
+    }
+  },
   "homepage": "https://git.sinnerschrader.com/olagas/kisstance/",
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "eslint": "^6.8.0",
+    "husky": "^4.2.5",
     "node-sass": "^4.13.1",
     "nodemon": "^2.0.2",
     "stylelint": "^13.2.1",
