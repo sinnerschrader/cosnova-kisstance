@@ -12,6 +12,46 @@
       width: 33%;
       text-align: center; }
 
+.odometer {
+  line-height: initial;
+  font-size: 2.9em;
+  font-weight: 600; }
+
+.counter_container {
+  height: 700px;
+  background-image: url("../../src/img/counter-background.png");
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #fff; }
+  .counter_container .counter_numbers {
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .counter_container .counter_numbers .euro-sign {
+      font-size: 2.6em;
+      vertical-align: middle; }
+    .counter_container .counter_numbers .text-small {
+      line-height: 1;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1.4em;
+      font-weight: 600;
+      margin: 0; }
+    .counter_container .counter_numbers .counter-hearts {
+      position: absolute;
+      background-image: url(../../src/img/counter-hearts.png);
+      width: 90px;
+      height: 155px;
+      background-size: contain;
+      display: inline-block;
+      background-repeat: no-repeat;
+      bottom: 90px;
+      right: 0; }
+
 #footer {
   background: #b92447;
   color: #fff;
@@ -24,16 +64,20 @@
       #footer ul li a {
         color: #fff; }
   #footer .flex-grid-thirds .col .logo {
-    width: 90%;
-    height: 90%;
-    object-fit: cover; }
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+    background-color: white; }
 
 #header {
   background-image: url("../../src/img/header_img_text.jpg");
+  background-position: center top;
   background-size: contain;
   background-repeat: no-repeat;
-  min-height: 100vw;
-  width: 100%; }
+  height: 100vw;
+  width: 100%;
+  max-width: 980px;
+  max-height: 980px; }
 
 /* Alt text for header image */
 .header_claim_alt {
@@ -44,9 +88,21 @@
   text-align: center;
   display: block; }
 
+.header_dwb {
+  display: block;
+  text-align: center;
+  background-image: url("../../src/img/dwb_bg.png");
+  background-position: center 85px;
+  background-size: 150vw;
+  background-repeat: no-repeat;
+  margin: 0 -1.875em;
+  padding: 0 0 150px; }
+
 .header_dwb .logo {
-  min-height: 250px;
-  padding: 50px; }
+  width: 60%;
+  margin: 50px;
+  -webkit-filter: grayscale(1) drop-shadow(-5px 15px 20px rgba(0, 0, 0, 0.1));
+  filter: grayscale(1) drop-shadow(-5px 15px 20px rgba(0, 0, 0, 0.1)); }
 
 #js-olapic_stream {
   text-align: center;
@@ -61,21 +117,202 @@
   text-align: right;
   display: block; }
 
+.glide .glide__slide .text {
+  line-height: 1em;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+  padding: 10px; }
+
+.glide .glide__slide .slider-image {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover; }
+
+.glide .glide__slide .slider__title--wrap {
+  position: relative; }
+
+.glide .glide__slide .slider__title {
+  background-image: url("../../src/img/lipstick-background.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  top: -50px;
+  z-index: 100;
+  text-align: center; }
+
+.glide .glide__post {
+  background-color: #eb9240; }
+  .glide .glide__post .slider__info {
+    background-image: url("../../src/img/camera.png");
+    background-repeat: no-repeat;
+    background-position: center center; }
+
+.glide .glide__tag {
+  background-color: #d19891; }
+  .glide .glide__tag .slider__info {
+    background-image: url("../../src/img/notes.png");
+    background-repeat: no-repeat;
+    background-position: center center; }
+
+.glide .glide__location {
+  background-color: #c66e98; }
+  .glide .glide__location .slider__info {
+    background-image: url("../../src/img/location.png");
+    background-repeat: no-repeat;
+    background-position: center center; }
+
+.glide .slider__info {
+  padding: 66px 55px;
+  font-size: 24px;
+  min-height: 320px; }
+  .glide .slider__info .text {
+    font-size: 25px;
+    padding: 20px;
+    font-weight: 200; }
+
+.arrow {
+  position: absolute;
+  display: block;
+  top: 25%;
+  z-index: 2;
+  color: white;
+  padding: 9px 12px;
+  background-color: transparent;
+  opacity: 1;
+  border: none;
+  cursor: pointer;
+  transition: opacity 150ms ease, border 300ms ease-in-out;
+  transform: translateY(-50%);
+  line-height: 1; }
+  .arrow.glide__arrow--left {
+    transform: scaleX(-1);
+    top: 22%; }
+
+.glide__bullets.custom__bullets {
+  bottom: 7em; }
+  .glide__bullets.custom__bullets .glide__bullet {
+    border-radius: 0;
+    width: 22px;
+    height: 6px; }
+
+.impressum-header {
+  width: 100%;
+  height: 160px;
+  text-align: center;
+  background: url("../../src/img/imprint_header.png");
+  background-size: cover; }
+
+.link_back-home {
+  width: 25px;
+  position: relative;
+  float: left;
+  top: 40px;
+  left: 40px; }
+
+.kisstance_logo {
+  width: 40%;
+  margin-top: 20px;
+  /* offset-x | offset-y | blur-radius | color */
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.5)); }
+
+.impressum {
+  padding-top: 0; }
+  .impressum .text {
+    padding-bottom: 40px; }
+
+@media only screen and (min-width: 320px) {
+  /* Small screen, non-retina */ }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 320px), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-width: 320px), only screen and (min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (min-resolution: 192dpi) and (min-width: 320px), only screen and (min-resolution: 2dppx) and (min-width: 320px) {
+  .headline {
+    font-size: 1.6em !important;
+    line-height: 2em !important; }
+  .sub_headline {
+    font-size: 1.2em !important;
+    line-height: 1.6em !important; }
+  .text {
+    font-size: 1em !important;
+    line-height: 1.8em !important; }
+  .slider__info .text {
+    line-height: 1.1em !important; } }
+
+@media only screen and (min-width: 700px) {
+  /* Medium screen, non-retina */ }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 700px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 700px), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-width: 700px), only screen and (min-device-pixel-ratio: 2) and (min-width: 700px), only screen and (min-resolution: 192dpi) and (min-width: 700px), only screen and (min-resolution: 2dppx) and (min-width: 700px) {
+  /* Medium screen, retina, stuff to override above media query */
+  .headline {
+    font-size: 4em !important;
+    line-height: 2em !important; }
+  .sub_headline {
+    font-size: 2.6em !important;
+    line-height: 1.8em !important; }
+  .text {
+    font-size: 2.6em !important;
+    line-height: 2em !important; }
+  .link_back-home {
+    width: 60px !important;
+    top: 50px !important;
+    left: 70px !important; }
+  .impressum-header {
+    height: 400px; }
+  .odometer {
+    font-size: 6em !important; }
+  .euro-sign {
+    font-size: 5.8em !important; }
+  .counter_container .counter_numbers .text-small {
+    font-size: 2em !important; }
+  .header_dwb {
+    background-position: center 150px !important;
+    padding: 0 0 300px !important; }
+  .slider__info .text {
+    margin-top: 1em !important;
+    line-height: 1.6em !important; } }
+
+@media only screen and (min-width: 1300px) {
+  /* Large screen, non-retina */ }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1300px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 1300px), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-width: 1300px), only screen and (min-device-pixel-ratio: 2) and (min-width: 1300px), only screen and (min-resolution: 192dpi) and (min-width: 1300px), only screen and (min-resolution: 2dppx) and (min-width: 1300px) {
+  /* Large screen, retina, stuff to override above media query */ }
+
 body {
   font-family: "lato", sans-serif;
   font-size: 14px;
   line-height: 1.8em; }
+
+.container_body {
+  max-width: 980px;
+  min-width: 320px;
+  margin: 0 auto; }
 
 .headline {
   font-size: 2.2em;
   line-height: 2.6em;
   text-transform: uppercase;
   font-weight: 600;
+  margin: 0 auto; }
+
+.headline_background {
   background: url("../../src/img/bg_headline.svg") center no-repeat;
-  background-size: contain;
+  background-size: cover;
   margin: 0 auto;
   color: #fff;
   text-align: center; }
+
+.sub_headline {
+  font-size: 2em;
+  line-height: 2.4em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 auto; }
 
 .text,
 .link,

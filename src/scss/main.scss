@@ -1,10 +1,19 @@
+// General
 @import "./grid";
 @import "./variables";
 
 // Components
+@import "./counter";
 @import "./footer";
 @import "./header";
 @import "./olapic_ugc";
+@import "./slider";
+
+// Pages
+@import "./imprint";
+
+// Optimisation
+@import "./retina";
 
 body {
   font-family: "lato", sans-serif;
@@ -12,16 +21,34 @@ body {
   line-height: 1.8em;
 }
 
+.container_body {
+  max-width: 980px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
 .headline {
   font-size: 2.2em;
   line-height: 2.6em;
   text-transform: uppercase;
   font-weight: 600;
+  margin: 0 auto;
+}
+
+.headline_background {
   background: url('../../src/img/bg_headline.svg') center no-repeat;
-  background-size: contain;
+  background-size: cover;
   margin: 0 auto;
   color: #fff;
   text-align: center;
+}
+
+.sub_headline {
+  font-size: 2em;
+  line-height: 2.4em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 auto;
 }
 
 .text,

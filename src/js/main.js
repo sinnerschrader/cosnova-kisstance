@@ -69,3 +69,13 @@ async function getSumOfAllPosts() {
 
 getImageUrls();
 getSumOfAllPosts();
+
+// mount Glide.js
+new Glide('.glide').mount();
+
+
+// odometer counter
+setTimeout(function(){
+
+    window.odometer.innerHTML = 611500;
+}, 1000);
