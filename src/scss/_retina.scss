@@ -5,10 +5,10 @@
 @media
   only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px),
   only screen and (min--moz-device-pixel-ratio: 2)      and (min-width: 320px),
-only screen and (-o-min-device-pixel-ratio: 2/1)    and (min-width: 320px),
-only screen and (min-device-pixel-ratio: 2)      and (min-width: 320px),
-only screen and (min-resolution: 192dpi) and (min-width: 320px),
-only screen and (min-resolution: 2dppx)  and (min-width: 320px) {
+  only screen and (-o-min-device-pixel-ratio: 2/1)    and (min-width: 320px),
+  only screen and (min-device-pixel-ratio: 2)      and (min-width: 320px),
+  only screen and (min-resolution: 192dpi) and (min-width: 320px),
+  only screen and (min-resolution: 2dppx)  and (min-width: 320px) {
   .headline {
     font-size: 1.6em !important;
     line-height: 2em !important;
@@ -33,10 +33,10 @@ only screen and (min-resolution: 2dppx)  and (min-width: 320px) {
 @media
   only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 700px),
   only screen and (min--moz-device-pixel-ratio: 2)      and (min-width: 700px),
-only screen and (-o-min-device-pixel-ratio: 2/1)    and (min-width: 700px),
-only screen and (min-device-pixel-ratio: 2)      and (min-width: 700px),
-only screen and (min-resolution: 192dpi) and (min-width: 700px),
-only screen and (min-resolution: 2dppx)  and (min-width: 700px) {
+  only screen and (-o-min-device-pixel-ratio: 2/1)    and (min-width: 700px),
+  only screen and (min-device-pixel-ratio: 2)      and (min-width: 700px),
+  only screen and (min-resolution: 192dpi) and (min-width: 700px),
+  only screen and (min-resolution: 2dppx)  and (min-width: 700px) {
   /* Medium screen, retina, stuff to override above media query */
 
   .headline {
@@ -71,7 +71,10 @@ only screen and (min-resolution: 2dppx)  and (min-width: 700px) {
     padding: 0 0 300px !important;
   }
 
-  .slider__info .text { margin-top: 1em !important; line-height: 1.6em !important; }
+  .slider__info .text {
+    margin-top: 1em !important;
+    line-height: 1.6em !important;
+  }
 }
 
 @media only screen and (min-width: 1300px) {
@@ -81,9 +84,9 @@ only screen and (min-resolution: 2dppx)  and (min-width: 700px) {
 @media
   only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1300px),
   only screen and (min--moz-device-pixel-ratio: 2)      and (min-width: 1300px),
-only screen and (-o-min-device-pixel-ratio: 2/1)    and (min-width: 1300px),
-only screen and (min-device-pixel-ratio: 2)      and (min-width: 1300px),
-only screen and (min-resolution: 192dpi) and (min-width: 1300px),
-only screen and (min-resolution: 2dppx)  and (min-width: 1300px) {
+  only screen and (-o-min-device-pixel-ratio: 2/1)    and (min-width: 1300px),
+  only screen and (min-device-pixel-ratio: 2)      and (min-width: 1300px),
+  only screen and (min-resolution: 192dpi) and (min-width: 1300px),
+  only screen and (min-resolution: 2dppx)  and (min-width: 1300px) {
   /* Large screen, retina, stuff to override above media query */
 }
