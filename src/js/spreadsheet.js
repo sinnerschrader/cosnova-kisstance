@@ -1,4 +1,4 @@
-var { google } = require('googleapis');
+import { google }  from '../../node_modules/googleapis/build/src/index';
 const sheets = google.sheets('v4');
 import { SCOPES } from './config.js'
 
