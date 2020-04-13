@@ -237,6 +237,8 @@
   .headline {
     font-size: 1.6em !important;
     line-height: 2em !important; }
+  .headline_background {
+    line-height: 2.8em !important; }
   .sub_headline {
     font-size: 1.2em !important;
     line-height: 1.6em !important; }
@@ -254,6 +256,8 @@
   .headline {
     font-size: 4em !important;
     line-height: 2em !important; }
+  .headline_background {
+    line-height: 3em !important; }
   .sub_headline {
     font-size: 2.6em !important;
     line-height: 1.8em !important; }
@@ -304,10 +308,10 @@ body {
 
 .headline_background {
   background: url("../../src/img/bg_headline.svg") center no-repeat;
-  background-size: cover;
   margin: 0 auto;
   color: #fff;
-  text-align: center; }
+  text-align: center;
+  background-size: contain; }
 
 .sub_headline {
   font-size: 2em;
