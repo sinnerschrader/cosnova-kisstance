@@ -37,10 +37,10 @@ body {
 
 .headline_background {
   background: url('../../src/img/bg_headline.svg') center no-repeat;
-  background-size: cover;
   margin: 0 auto;
   color: #fff;
   text-align: center;
+  background-size: contain;
 }
 
 .sub_headline {
