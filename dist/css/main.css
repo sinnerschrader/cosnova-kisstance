@@ -57,6 +57,8 @@
   color: #fff;
   position: sticky;
   width: 100%; }
+  #footer .text {
+    color: #fff; }
   #footer ul {
     padding: 2em 0; }
     #footer ul li {
