@@ -4,6 +4,7 @@
 
 // Components
 @import "./cookie";
+@import "./content-hub";
 @import "./counter";
 @import "./content-hub-homepage";
 @import "./content-header";
@@ -44,6 +45,11 @@ body {
   color: #fff;
   text-align: center;
   background-size: contain;
+  &.headline-red {
+    background: url('../../src/img/red-headline.png') center no-repeat;
+    background-size: cover;
+    padding: 1em 0;
+  }
 }
 
 .sub_headline {
@@ -67,4 +73,14 @@ body {
 .text {
   font-size: 1.8em;
   line-height: 2em;
+}
+
+.content-headline {
+  font-weight: 900;
+  font-size: 2.8em;
+  padding: 2.222em 0 1.667em 0;
+}
+
+.top-headline {
+  font-weight: 900;
 }
