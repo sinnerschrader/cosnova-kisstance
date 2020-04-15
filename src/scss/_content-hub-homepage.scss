@@ -1,0 +1,19 @@
+.flex-container {
+    display: flex;
+    margin: 2.5em 0;
+    .flex-item-image {
+        width: 33%;
+        min-width: 33%;
+        img {
+            width:100%;
+        }
+    }
+    .flex-item{
+        padding-left: 2.5em;
+        .content-title {
+            font-size: 3em;
+            line-height: 1.8em;
+            margin: 0;
+        }
+    }
+  }
