@@ -5,6 +5,10 @@
   background: url('../../src/img/content_header.png');
   background-size: cover;
   background-position: center;
+  &.content-header-overlap {
+    position: absolute;
+    z-index: 2;
+  }
 }
 
 // Link back to index page
