@@ -1,29 +1,3 @@
-.impressum-header {
-  width: 100%;
-  height: 160px;
-  text-align: center;
-  background: url('../../src/img/imprint_header.png');
-  background-size: cover;
-}
-
-// Link back to index page
-.link_back-home {
-  width: 25px;
-  position: relative;
-  float: left;
-  top: 40px;
-  left: 40px;
-}
-
-.kisstance_logo {
-  width: 40%;
-  margin-top: 20px;
-
-  /* offset-x | offset-y | blur-radius | color */
-  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.5));
-  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.5));
-}
-
 // content of index page
 .impressum {
   padding-top: 0;
