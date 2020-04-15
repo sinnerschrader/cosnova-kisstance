@@ -45,6 +45,11 @@ body {
   color: #fff;
   text-align: center;
   background-size: contain;
+  &.headline-red {
+    background: url('../../src/img/red-headline.png') center no-repeat;
+    background-size: cover;
+    padding: 1em 0;
+  }
 }
 
 .sub_headline {
