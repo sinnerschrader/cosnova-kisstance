@@ -15,18 +15,19 @@
 #cookie-notification {
   display: block;
   position: fixed;
-  background-color: #000000;
+  background-color: #000;
   bottom: 0;
   left: 0;
   right: 0;
   color: #fff;
   z-index: 3; }
-  #cookie-notification .privacy-policy, #cookie-notification .text {
+  #cookie-notification .privacy-policy,
+  #cookie-notification .text {
     color: #fff; }
   #cookie-notification .accept-cookie {
     color: #fff;
     text-decoration: none;
-    background-color: #C7777A;
+    background-color: #c7777a;
     max-width: 26em;
     width: 100%;
     display: block;
@@ -77,6 +78,21 @@
       background-repeat: no-repeat;
       bottom: 90px;
       right: 0; }
+
+.flex-container {
+  display: flex;
+  margin: 2.5em 0; }
+  .flex-container .flex-item-image {
+    width: 33%;
+    min-width: 33%; }
+    .flex-container .flex-item-image img {
+      width: 100%; }
+  .flex-container .flex-item {
+    padding-left: 2.5em; }
+    .flex-container .flex-item .content-title {
+      font-size: 3em;
+      line-height: 1.8em;
+      margin: 0; }
 
 #footer {
   background: #b92447;
