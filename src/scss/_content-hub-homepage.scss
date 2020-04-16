@@ -38,3 +38,9 @@
   padding: 0.75em 0;
   font-size: 1.5em;
 }
+
+@media only screen and (min-width: 600px) {
+  .flex-container .flex-item .content-title {
+    font-size: 2.6em;
+  }
+}
