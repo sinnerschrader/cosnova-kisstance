@@ -110,6 +110,114 @@
       bottom: 90px;
       right: 0; }
 
+/* counter_container with map feat */
+.counter_container_map {
+  height: auto;
+  background-size: auto 125%; }
+  .counter_container_map .counter_numbers {
+    position: relative;
+    top: auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-bottom: 1.5em;
+    display: inline-block; }
+  .counter_container_map .odometer,
+  .counter_container_map .counter_numbers .euro-sign {
+    font-size: 5em; }
+  .counter_container_map .counter_map_wrapper {
+    position: relative;
+    margin: 40% 0 25% 0;
+    left: 50%;
+    transform: translate(-50%, 0%); }
+  .counter_container_map .counter_numbers .counter-hearts {
+    width: 105px;
+    height: 186px;
+    top: -150px;
+    bottom: auto;
+    right: 0; }
+  .counter_container_map .world-map-wrapper {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto; }
+  .counter_container_map .earth {
+    width: 100%;
+    height: auto; }
+  .counter_container_map .kiss {
+    position: absolute;
+    width: 14px;
+    transform: scale(0);
+    /* @keyframes duration | timing-function | delay | iteration-count | direction | fill-mode | play-state | name */
+    animation: 5s ease-in 0s infinite normal none running kisses; }
+  .counter_container_map .kiss0 {
+    top: 35%;
+    left: 11%;
+    animation-delay: 2s; }
+  .counter_container_map .kiss1 {
+    top: 36%;
+    left: 23%;
+    animation-delay: 5.5s; }
+  .counter_container_map .kiss2 {
+    top: 78%;
+    left: 26%;
+    animation-delay: 1s; }
+  .counter_container_map .kiss3 {
+    top: 35%;
+    left: 45%;
+    animation-delay: 3.5s;
+    animation-name: kisses-alt; }
+  .counter_container_map .kiss4 {
+    top: 21%;
+    left: 52%;
+    animation-delay: 5s; }
+  .counter_container_map .kiss5 {
+    top: 33%;
+    left: 53%;
+    animation-delay: 0s; }
+  .counter_container_map .kiss6 {
+    top: 75.5%;
+    left: 52.25%;
+    animation-delay: 3.5s; }
+  .counter_container_map .kiss7 {
+    top: 19%;
+    right: 24%;
+    animation-delay: 6.5s; }
+  .counter_container_map .kiss8 {
+    top: 30%;
+    right: 14%;
+    animation-delay: 6.8s; }
+  .counter_container_map .kiss9 {
+    top: 47.5%;
+    right: 17%;
+    animation-delay: 4s; }
+  .counter_container_map .kiss10 {
+    bottom: 17%;
+    right: 8%;
+    animation-delay: 3s; }
+
+@keyframes kisses {
+  0% {
+    transform: scale(0); }
+  10% {
+    transform: scale(0); }
+  30% {
+    transform: scale(1); }
+  80% {
+    transform: scale(1); }
+  100% {
+    transform: scale(0); } }
+
+@keyframes kisses-alt {
+  0% {
+    transform: scale(0); }
+  20% {
+    transform: scale(0); }
+  40% {
+    transform: scale(1); }
+  80% {
+    transform: scale(1); }
+  100% {
+    transform: scale(0); } }
+
 .flex-container {
   display: flex;
   margin: 2.5em 0; }

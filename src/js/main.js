@@ -97,16 +97,16 @@ getImageUrls();
 // eslint-disable-next-line
 new Glide('.glide').mount();
 
-//Cookie Notification
-var cookieNotificationElement = document.getElementById('cookie-notification');
-var acceptCookies = document.querySelector('.accept-cookie');
+// Cookie Notification
+let cookieNotificationElement = document.getElementById('cookie-notification');
+let acceptCookies = document.querySelector('.accept-cookie');
 
-acceptCookies.addEventListener("click", function(){
-  localStorage.setItem("cookieNotification", "accepted");
+acceptCookies.addEventListener('click', function () {
+  localStorage.setItem('cookieNotification', 'accepted');
   cookieNotificationElement.classList.add('hide');
 });
 
-if(localStorage.getItem("cookieNotification") === null){
+if (localStorage.getItem('cookieNotification') === null) {
   cookieNotificationElement.classList.remove('hide');
 } else {
   cookieNotificationElement.classList.add('hide');
