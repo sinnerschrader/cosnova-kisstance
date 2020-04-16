@@ -126,7 +126,7 @@
     display: inline-block; }
   .counter_container_map .odometer,
   .counter_container_map .counter_numbers .euro-sign {
-    font-size: 5em; }
+    font-size: 4.25em; }
   .counter_container_map .counter_map_wrapper {
     position: relative;
     margin: 40% 0 25% 0;
@@ -310,6 +310,7 @@
 
 .header_img {
   width: 100%;
+  max-width: 800px;
   text-align: center;
   display: block; }
 
@@ -318,10 +319,10 @@
   text-align: center;
   background-image: url("../../src/img/dwb_bg.png");
   background-position: center 85px;
-  background-size: 150vw;
+  background-size: 150% auto;
   background-repeat: no-repeat;
-  margin: 0 -1.875em -2em -1.875em;
-  padding: 0 26px 50px 26px; }
+  margin: 0 -1.875em -7em -1.875em;
+  padding: 0 26px 120px 26px; }
 
 .header_dwb .logo {
   width: 100%;
@@ -408,7 +409,7 @@
     background-position: center center; }
 
 .glide .slider__info {
-  padding: 70px 20px; }
+  padding: 60px 20px; }
   .glide .slider__info .text {
     font-size: 24px;
     line-height: 31px;
@@ -460,12 +461,7 @@
     line-height: 2.8em !important; }
   .sub_headline {
     font-size: 1.2em !important;
-    line-height: 1.6em !important; }
-  /*.text {
-    font-size: 1em !important;
-    line-height: 1.8em !important;
-  }*/
-  /* .slider__info .text { line-height: 1.1em !important; }*/ }
+    line-height: 1.6em !important; } }
 
 @media only screen and (min-width: 700px) {
   /* Medium screen, non-retina */ }
@@ -496,8 +492,7 @@
   .counter_container .counter_numbers .text-small {
     font-size: 2em !important; }
   .header_dwb {
-    background-position: center 150px !important;
-    padding: 0 0 300px !important; }
+    background-position: center 150px !important; }
   .slider__info .text {
     margin-top: 1em !important;
     line-height: 1.6em !important; } }
