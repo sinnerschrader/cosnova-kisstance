@@ -45,6 +45,7 @@ body {
   color: #fff;
   text-align: center;
   background-size: contain;
+
   &.headline-red {
     background: url('../../src/img/red-headline.png') center no-repeat;
     background-size: cover;
@@ -83,4 +84,21 @@ body {
 
 .top-headline {
   font-weight: 900;
+}
+
+.button-pink {
+  color: $white;
+  text-decoration: none;
+  background-color: $light-pink;
+  max-width: 26em;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0.75em 0;
+  margin: 2em 0 4em 0;
+
+  &.accept-cookie {
+    margin: 1em auto;
+  }
 }
