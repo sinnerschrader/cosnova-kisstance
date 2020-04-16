@@ -2,18 +2,22 @@ import { OLAPIC_API_KEY, OLAPIC_URL, SHEET_URL } from './config.js';
 
 function returnImageTags(arr) {
   const media = arr.data._embedded.media;
-  const stream = document.getElementById('js-olapic_stream');
-  let tags = '';
-  for (let i = 0; i < 4; i++) {
-    tags = tags + (
-      '<img class="olapic_img" alt="kisstance instagram post number '
+  const stream = document.getElementById('olapic-images');
+  const totalImgTags = stream.getElementsByTagName('img').length;
+
+  if (totalImgTags < 20) {
+    let tags = '';
+    for (let i = totalImgTags; i < totalImgTags + 4; i++) {
+      tags = tags + (
+        '<img class="olapic_img" alt="kisstance instagram post number '
         + (i+1)
         + '" src="'
         + media[i].images.mobile
         + '"> <br />'
-    );
+      );
+    }
+    document.getElementById('olapic-images').innerHTML = document.getElementById('olapic-images').innerHTML + tags;
   }
-  stream.innerHTML = tags + document.getElementById('js-olapic_stream').innerHTML;
 }
 
 function initOdometer(res) {
@@ -39,6 +43,17 @@ function getImages(url) {
   request.open('GET', url, true);
   request.send();
 }
+
+document.addEventListener('click', function (event) {
+  if (event.target.matches('#loadImagesBtn')) {
+    const totalTags = document.getElementById('olapic-images').getElementsByTagName('img').length;
+    if (totalTags < 20) {
+      getImageUrls();
+    } else {
+      window.location.href = 'https://www.instagram.com/explore/tags/kisstance/';
+    }
+  }
+}, false);
 
 function getData() {
   const httpRequest = new XMLHttpRequest();
