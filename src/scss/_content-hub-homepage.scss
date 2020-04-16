@@ -5,6 +5,7 @@
   .flex-item-image {
     width: 33%;
     min-width: 33%;
+    padding-top: 8px; //being on the same line as headline
 
     img {
       width: 100%;
@@ -12,11 +13,11 @@
   }
 
   .flex-item {
-    padding-left: 2.5em;
+    padding-left: 1.5em;
 
     .content-title {
-      font-size: 3em;
-      line-height: 1.8em;
+      font-size: 1.43em;
+      line-height: 1.64em;
       margin: 0;
     }
 
