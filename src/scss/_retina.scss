@@ -22,12 +22,6 @@
     font-size: 1.2em !important;
     line-height: 1.6em !important;
   }
-
-  .text {
-    font-size: 1em !important;
-    line-height: 1.8em !important;
-  }
-  .slider__info .text { line-height: 1.1em !important; }
 }
 
 @media only screen and (min-width: 700px) {
@@ -76,7 +70,6 @@
 
   .header_dwb {
     background-position: center 150px !important;
-    padding: 0 0 300px !important;
   }
 
   .slider__info .text {

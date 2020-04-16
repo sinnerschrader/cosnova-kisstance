@@ -16,6 +16,7 @@
 
 .header_img {
   width: 100%;
+  max-width: 800px;
   text-align: center;
   display: block;
 }
@@ -25,15 +26,15 @@
   text-align: center;
   background-image: url("../../src/img/dwb_bg.png");
   background-position: center 85px;
-  background-size: 150vw;
+  background-size: 150% auto;
   background-repeat: no-repeat;
-  margin: 0 -1.875em;
-  padding: 0 0 150px;
+  margin: 0 -1.875em -7em -1.875em;
+  padding: 0 26px 120px 26px;
 }
 
 .header_dwb .logo {
-  width: 60%;
-  margin: 50px;
+  width: 100%;
+  margin: 40px auto 20px auto;
   -webkit-filter: grayscale(1) drop-shadow(-5px 15px 20px rgba(0, 0, 0, 0.1));
   filter: grayscale(1) drop-shadow(-5px 15px 20px rgba(0, 0, 0, 0.1));
 }
