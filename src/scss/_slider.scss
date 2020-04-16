@@ -110,3 +110,9 @@
     height: 6px;
   }
 }
+
+@media only screen and (min-width: 600px) {
+    .glide .slider__info {
+      padding: 80px 20px;
+  }
+}
