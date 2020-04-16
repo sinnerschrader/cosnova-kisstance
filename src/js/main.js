@@ -1,12 +1,15 @@
 import { OLAPIC_API_KEY, OLAPIC_URL, SHEET_URL } from './config.js';
+const TOTAL_IMAGES = 20;
 
 function returnImageTags(arr) {
   const media = arr.data._embedded.media;
   const stream = document.getElementById('olapic-images');
   const totalImgTags = stream.getElementsByTagName('img').length;
 
-  if (totalImgTags < 20) {
+  if (totalImgTags < TOTAL_IMAGES) {
     let tags = '';
+
+    // we want to load 4 pictures at a time, hence +4
     for (let i = totalImgTags; i < totalImgTags + 4; i++) {
       tags = tags + (
         '<img class="olapic_img" alt="kisstance instagram post number '
@@ -16,7 +19,8 @@ function returnImageTags(arr) {
         + '"> <br />'
       );
     }
-    document.getElementById('olapic-images').innerHTML = document.getElementById('olapic-images').innerHTML + tags;
+    document.getElementById('olapic-images').innerHTML =
+      document.getElementById('olapic-images').innerHTML + tags;
   }
 }
 
@@ -44,10 +48,25 @@ function getImages(url) {
   request.send();
 }
 
+function getImageUrls() {
+  const httpRequest = new XMLHttpRequest();
+  const url = OLAPIC_URL + '&auth_token=' + OLAPIC_API_KEY;
+
+  httpRequest.onreadystatechange = function () {
+    if (this.readyState === 4 && this.status === 200) {
+      const myArr = JSON.parse(this.responseText);
+      const imageUrl = 'https:' + myArr.data._embedded['media:recent']._links.self.href;
+      getImages(imageUrl);
+    }
+  };
+  httpRequest.open('GET', url, true);
+  httpRequest.send();
+}
+
 document.addEventListener('click', function (event) {
   if (event.target.matches('#loadImagesBtn')) {
     const totalTags = document.getElementById('olapic-images').getElementsByTagName('img').length;
-    if (totalTags < 20) {
+    if (totalTags < TOTAL_IMAGES) {
       getImageUrls();
     } else {
       window.location.href = 'https://www.instagram.com/explore/tags/kisstance/';
@@ -62,21 +81,6 @@ function getData() {
   httpRequest.onreadystatechange = function () {
     if (this.readyState === 4 && this.status === 200) {
       initOdometer(this.response);
-    }
-  };
-  httpRequest.open('GET', url, true);
-  httpRequest.send();
-}
-
-function getImageUrls() {
-  const httpRequest = new XMLHttpRequest();
-  const url = OLAPIC_URL + '&auth_token=' + OLAPIC_API_KEY;
-
-  httpRequest.onreadystatechange = function () {
-    if (this.readyState === 4 && this.status === 200) {
-      const myArr = JSON.parse(this.responseText);
-      const imageUrl = 'https:' + myArr.data._embedded['media:recent']._links.self.href;
-      getImages(imageUrl);
     }
   };
   httpRequest.open('GET', url, true);
