@@ -148,30 +148,29 @@
   .counter_container_map .kiss {
     position: absolute;
     width: 14px;
-    transform: scale(0);
+    transform: scale(1);
     /* @keyframes duration | timing-function | delay | iteration-count | direction | fill-mode | play-state | name */
-    animation: 5s ease-in 0s infinite normal none running kisses; }
+    animation: 2.25s linear 0s infinite normal none running kisses; }
   .counter_container_map .kiss0 {
     top: 35%;
     left: 11%;
-    animation-delay: 2s; }
+    animation-delay: 1s; }
   .counter_container_map .kiss1 {
     top: 36%;
     left: 23%;
-    animation-delay: 5.5s; }
+    animation-delay: 2s; }
   .counter_container_map .kiss2 {
     top: 78%;
     left: 26%;
-    animation-delay: 1s; }
+    animation-delay: 0s; }
   .counter_container_map .kiss3 {
     top: 35%;
     left: 45%;
-    animation-delay: 3.5s;
-    animation-name: kisses-alt; }
+    animation-delay: 1s; }
   .counter_container_map .kiss4 {
     top: 21%;
     left: 52%;
-    animation-delay: 5s; }
+    animation-delay: 2s; }
   .counter_container_map .kiss5 {
     top: 33%;
     left: 53%;
@@ -179,47 +178,66 @@
   .counter_container_map .kiss6 {
     top: 75.5%;
     left: 52.25%;
-    animation-delay: 3.5s; }
+    animation-delay: 1.5s; }
   .counter_container_map .kiss7 {
     top: 19%;
     right: 24%;
-    animation-delay: 6.5s; }
+    animation-delay: 3s; }
   .counter_container_map .kiss8 {
     top: 30%;
     right: 14%;
-    animation-delay: 6.8s; }
+    animation-delay: 2s; }
   .counter_container_map .kiss9 {
     top: 47.5%;
     right: 17%;
-    animation-delay: 4s; }
+    animation-delay: 1s; }
   .counter_container_map .kiss10 {
-    bottom: 17%;
+    bottom: 16%;
     right: 8%;
-    animation-delay: 3s; }
+    animation-delay: 0s; }
+  .counter_container_map .kiss11 {
+    bottom: 35%;
+    right: 46%;
+    animation-delay: 1.25s; }
+  .counter_container_map .kiss12 {
+    top: 35%;
+    right: 33%;
+    animation-delay: 2s; }
+  .counter_container_map .kiss13 {
+    bottom: 22%;
+    right: 13%;
+    animation-delay: 0s; }
+  .counter_container_map .kiss14 {
+    bottom: 33%;
+    left: 27%;
+    animation-delay: 1s; }
+  .counter_container_map .kiss15 {
+    top: 19%;
+    left: 11%;
+    animation-delay: 0.5s; }
+  .counter_container_map .kiss16 {
+    top: 35%;
+    right: 24%;
+    animation-delay: 1s; }
+  .counter_container_map .kiss17 {
+    top: 11%;
+    right: 12%;
+    animation-delay: 0.75s; }
+  .counter_container_map .kiss18 {
+    top: 9%;
+    left: 36%;
+    animation-delay: 1.25s; }
 
 @keyframes kisses {
   0% {
-    transform: scale(0); }
-  10% {
-    transform: scale(0); }
-  30% {
-    transform: scale(1); }
-  80% {
-    transform: scale(1); }
+    transform: scale(0.5);
+    opacity: 0.5; }
+  50% {
+    transform: scale(3);
+    opacity: 1; }
   100% {
-    transform: scale(0); } }
-
-@keyframes kisses-alt {
-  0% {
-    transform: scale(0); }
-  20% {
-    transform: scale(0); }
-  40% {
-    transform: scale(1); }
-  80% {
-    transform: scale(1); }
-  100% {
-    transform: scale(0); } }
+    transform: scale(6);
+    opacity: 0; } }
 
 .flex-container {
   display: flex;
