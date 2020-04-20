@@ -1,4 +1,4 @@
-import { OLAPIC_API_KEY, OLAPIC_URL, SHEET_URL } from './config.js';
+import { OLAPIC_API_KEY, OLAPIC_URL } from './config.js';
 const TOTAL_IMAGES = 20;
 
 function returnImageTags(arr) {
@@ -24,15 +24,11 @@ function returnImageTags(arr) {
   }
 }
 
-function initOdometer(res) {
-  let sum;
-  if (res !== isNaN) {
-    sum = res;
-  } else {
-    sum = 500000;
-  }
-  // eslint-disable-next-line
-  odometer.innerHTML = sum;
+function initOdometer() {
+  window.setTimeout(() => {
+    // eslint-disable-next-line
+    odometer.innerHTML = 1000000;
+  }, 1500);
 }
 
 function getImages(url) {
@@ -74,21 +70,8 @@ document.addEventListener('click', function (event) {
   }
 }, false);
 
-function getData() {
-  const httpRequest = new XMLHttpRequest();
-  const url = SHEET_URL;
-
-  httpRequest.onreadystatechange = function () {
-    if (this.readyState === 4 && this.status === 200) {
-      initOdometer(this.response);
-    }
-  };
-  httpRequest.open('GET', url, true);
-  httpRequest.send();
-}
-
-// get donation sum from google spreadsheet (as CVS)
-getData();
+// init Counter
+initOdometer();
 
 // get image URLs from OlaPic
 getImageUrls();
